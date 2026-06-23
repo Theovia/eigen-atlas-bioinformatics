@@ -14,6 +14,8 @@ el navegador o publicar con GitHub Pages.
 - Una biblioteca 2026 de referencias oficiales y papers primarios.
 - Una prueba interactiva de criterio bioinformatico para distinguir lectura de
   habilidad real.
+- Un playbook Forward Deployed Engineer para convertir analisis en entregas
+  operables.
 - Documentacion ligera para usar el repo fuente sin perderse.
 
 ## Fuente original citada
@@ -35,6 +37,7 @@ Usa el repo original para notebooks, datos, PDF y practicas completas.
 │   ├── estructura.md          # Como esta ordenado el curso
 │   ├── ruta-aprendizaje.md    # Ruta sugerida de estudio
 │   ├── criterios-cientificos.md
+│   ├── fde-playbook.md        # Entrega de campo y operacion
 │   └── referencias.md
 ├── CITATION.cff               # Como citar esta version
 └── NOTICE.md                  # Atribucion y alcance
@@ -45,7 +48,8 @@ Usa el repo original para notebooks, datos, PDF y practicas completas.
 1. Abre `index.html`.
 2. Sigue el orden del menu superior.
 3. Ejecuta los notebooks desde el repo fuente cuando la guia lo indique.
-4. Completa la "Licencia de manejo bioinformatico" al final.
+4. Completa la "Licencia de manejo bioinformatico".
+5. Cierra con el playbook FDE: brief, pipeline, validacion, runbook y handoff.
 
 ## Publicar con GitHub Pages
 

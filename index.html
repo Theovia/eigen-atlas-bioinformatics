@@ -1621,6 +1621,7 @@
         <a href="#proyectos">Proyectos</a>
         <a href="#fallas">Fallas</a>
         <a href="#competencia">Habilidad</a>
+        <a href="#fde">FDE</a>
         <a href="#siguiente">Siguiente</a>
       </nav>
     </div>
@@ -5100,11 +5101,191 @@ Siguiente prueba:</pre>
       </div>
     </section>
 
+<section class="course" id="fde">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Forward Deployed Bioinformatics</p>
+            <h2>La capa que convierte analisis en entrega real.</h2>
+          </div>
+          <p>
+            Un FDE en bioinformatica no solo corre notebooks: entiende la pregunta
+            del laboratorio, traduce restricciones, arma un flujo reproducible,
+            deja evidencia operable y entrena al equipo para sostenerlo.
+          </p>
+        </div>
+
+        <div class="course-stack">
+          <article class="unit" id="fde-gap">
+            <div class="unit-head">
+              <div>
+                <span class="tag">Brecha real</span>
+                <h2>Lo que faltaba para pasar de curso a despliegue.</h2>
+              </div>
+              <p class="unit-note">
+                La guia ya enseña modelos y criterio. Faltaba empaquetar eso como
+                una entrega de campo: descubrimiento, arquitectura, operacion,
+                validacion, handoff y soporte.
+              </p>
+            </div>
+            <div class="concept-grid">
+              <section class="concept"><b>Stakeholders</b><p>Quien decide, quien usa, quien valida biologicamente y quien mantiene el flujo?</p></section>
+              <section class="concept"><b>Dato</b><p>De donde viene, quien lo autoriza, que version tiene y que sesgos trae?</p></section>
+              <section class="concept"><b>Pipeline</b><p>Que pasos son manuales, cuales se automatizan y donde se registran parametros?</p></section>
+              <section class="concept"><b>Infra</b><p>Corre local, HPC, cloud o contenedor? Cuanto tarda y cuanto cuesta?</p></section>
+              <section class="concept"><b>Validacion</b><p>Que prueba minima demuestra que no entregaste humo computacional?</p></section>
+              <section class="concept"><b>Handoff</b><p>Que documento permite que otro lo opere sin preguntarte por WhatsApp?</p></section>
+            </div>
+          </article>
+
+          <article class="unit" id="fde-intake">
+            <div class="unit-head">
+              <div>
+                <span class="tag">Discovery</span>
+                <h2>Intake de 30 minutos antes de tocar datos.</h2>
+              </div>
+              <p class="unit-note">
+                Un FDE gana tiempo preguntando bien. Si esta ficha no se llena,
+                el pipeline todavia no tiene forma.
+              </p>
+            </div>
+            <pre class="mini-code">Proyecto:
+Decision que el cliente necesita tomar:
+Muestra / organismo / ensayo:
+Dato disponible y formato:
+Dato que falta:
+Restriccion: privacidad, tiempo, costo, compute, regulacion
+Baseline aceptable:
+Metrica tecnica:
+Metrica biologica:
+Entrega final: notebook, pipeline, reporte, dashboard, API, runbook
+Dueño despues del handoff:</pre>
+          </article>
+
+          <article class="unit" id="fde-architecture">
+            <div class="unit-head">
+              <div>
+                <span class="tag">Arquitectura</span>
+                <h2>Blueprint minimo de solucion bioinformatica desplegable.</h2>
+              </div>
+              <p class="unit-note">
+                No todo requiere Kubernetes. Pero todo requiere trazabilidad:
+                datos versionados, ambiente repetible, logs y salida auditable.
+              </p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Capa</th>
+                    <th>Pregunta FDE</th>
+                    <th>Entrega minima</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ingestion</td>
+                    <td>Como entra FASTQ, CSV, PDB, SBML, SMILES o metadata?</td>
+                    <td>Contrato de columnas, schema o manifest.</td>
+                  </tr>
+                  <tr>
+                    <td>Compute</td>
+                    <td>Donde corre: laptop, Colab, HPC, Batch, Slurm o cloud?</td>
+                    <td>Ambiente reproducible y limites de memoria/tiempo.</td>
+                  </tr>
+                  <tr>
+                    <td>Workflow</td>
+                    <td>Que pasos deben poder repetirse sin clicks?</td>
+                    <td>Script, notebook parametrizado, Snakemake, Nextflow o CWL.</td>
+                  </tr>
+                  <tr>
+                    <td>Validacion</td>
+                    <td>Que salida detecta fuga, error de formato o resultado absurdo?</td>
+                    <td>Checks de sanity, baseline y reporte de metrica.</td>
+                  </tr>
+                  <tr>
+                    <td>Operacion</td>
+                    <td>Que hace el equipo cuando falla a las 2 am?</td>
+                    <td>Runbook con sintomas, causa probable y rollback.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="unit" id="fde-runbook">
+            <div class="unit-head">
+              <div>
+                <span class="tag">Runbook</span>
+                <h2>Checklist de salida antes de decir "esta listo".</h2>
+              </div>
+              <p class="unit-note">
+                Esta lista separa demo bonita de sistema utilizable. No todo aplica
+                siempre, pero si no puedes justificar un punto, hay deuda.
+              </p>
+            </div>
+            <div class="practice-list">
+              <label><input type="checkbox"> El input tiene manifest, version, procedencia y responsable.</label>
+              <label><input type="checkbox"> El ambiente se reconstruye desde archivo o contenedor.</label>
+              <label><input type="checkbox"> El pipeline corre dos veces y produce salida equivalente.</label>
+              <label><input type="checkbox"> Hay baseline simple y metrica biologicamente defendible.</label>
+              <label><input type="checkbox"> Hay logs, parametros, seeds y ubicacion de outputs.</label>
+              <label><input type="checkbox"> Hay limites claros: que NO prueba el resultado.</label>
+              <label><input type="checkbox"> Hay handoff: como correr, como leer, como depurar, como escalar.</label>
+              <label><input type="checkbox"> Hay siguiente experimento o validacion experimental propuesta.</label>
+            </div>
+          </article>
+
+          <article class="unit" id="fde-standards">
+            <div class="unit-head">
+              <div>
+                <span class="tag">Estandares</span>
+                <h2>Referencias de operacion que un FDE debe reconocer.</h2>
+              </div>
+              <p class="unit-note">
+                No se trata de memorizar siglas. Se trata de saber cuando usar
+                estandares de workflows, datos, ejecucion y comparticion responsable.
+              </p>
+            </div>
+            <div class="source-list">
+              <a href="https://www.ga4gh.org/" target="_blank" rel="noreferrer">GA4GH: estandares para uso responsable de datos genomicos</a>
+              <a href="https://nf-co.re/docs/specifications/overview" target="_blank" rel="noreferrer">nf-core specifications: pipelines robustos y mantenibles</a>
+              <a href="https://www.nextflow.io/" target="_blank" rel="noreferrer">Nextflow: workflows reproducibles y portables a escala</a>
+              <a href="https://www.commonwl.org/" target="_blank" rel="noreferrer">Common Workflow Language: estandar abierto para describir workflows</a>
+              <a href="https://cwltool.readthedocs.io/" target="_blank" rel="noreferrer">cwltool: referencia para validar y ejecutar CWL</a>
+              <a href="https://nf-co.re/docs/community/regulatory/overview" target="_blank" rel="noreferrer">nf-core regulatory overview: validacion y reportes para pipelines</a>
+            </div>
+          </article>
+
+          <article class="unit" id="fde-final">
+            <div class="unit-head">
+              <div>
+                <span class="tag">Prueba FDE</span>
+                <h2>Considerate FDE-ready cuando puedas entregar esto.</h2>
+              </div>
+              <p class="unit-note">
+                La prueba final no es responder preguntas: es dejar un paquete que
+                alguien mas pueda operar, auditar y defender.
+              </p>
+            </div>
+            <div class="concept-grid">
+              <section class="concept"><b>1. Brief</b><p>Una pagina con decision, dato, restriccion, metrica, riesgo y dueño.</p></section>
+              <section class="concept"><b>2. Pipeline</b><p>Un flujo repetible con parametros visibles y outputs nombrados.</p></section>
+              <section class="concept"><b>3. Validacion</b><p>Baseline, sanity checks, limites y metrica que responda a la pregunta.</p></section>
+              <section class="concept"><b>4. Reporte</b><p>Resultado, incertidumbre, evidencia, interpretacion y siguiente experimento.</p></section>
+              <section class="concept"><b>5. Operacion</b><p>Runbook: correr, depurar, recuperar, escalar y saber cuando parar.</p></section>
+              <section class="concept"><b>6. Handoff</b><p>El usuario final puede repetirlo sin ti y sabe que decision tomar.</p></section>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
 <section class="next" id="siguiente">
       <div class="wrap next-grid">
         <div>
           <p class="eyebrow">Como seguimos</p>
-          <h2>La guia ya funciona como curso, bootcamp, bitacora y marco cientifico.</h2>
+          <h2>La guia ya funciona como curso, bootcamp, bitacora, marco cientifico y playbook FDE.</h2>
         </div>
         <div class="todo">
           <p>

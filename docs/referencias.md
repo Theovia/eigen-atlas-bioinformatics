@@ -29,6 +29,13 @@ referencias que conviene consultar.
 - BioBERT.
 - ChEMBL NAR.
 
+## Operacion FDE
+
+- GA4GH para datos genomicos responsables.
+- nf-core specifications para pipelines mantenibles.
+- Nextflow para workflows escalables y portables.
+- Common Workflow Language para describir herramientas y workflows.
+- cwltool para validar y ejecutar CWL.
+
 Regla practica: documentacion para ejecutar, bases para procedencia, papers para
 justificar claims, checklists para reportar.
-
