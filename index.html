@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guia didactica | IA + datos biologicos</title>
-  <meta name="description" content="Companion didactico interactivo para estudiar IA aplicada a datos biologicos a partir del taller MeIA 2025.">
+  <title>Eigen Atlas Bioinformatics</title>
+  <meta name="description" content="Atlas didactico interactivo para estudiar IA aplicada a datos biologicos.">
   <style>
     :root {
       --paper: #f4f7f8;
@@ -169,7 +169,7 @@
     }
 
     .intro::before {
-      content: "MeIA";
+      content: "Eigen";
       position: absolute;
       left: -8px;
       top: 24px;
@@ -1598,7 +1598,7 @@
     <div class="topbar-inner">
       <div class="brand">
         <span class="brand-mark" aria-hidden="true"></span>
-        <span>IA + Bioinformatica</span>
+        <span>Eigen Atlas Bioinformatics</span>
       </div>
       <nav aria-label="Navegacion principal">
         <a href="#mapa">Mapa</a>
@@ -1629,7 +1629,7 @@
   <main>
 <section class="intro" id="inicio">
       <div>
-        <p class="eyebrow">Guia viva del taller MeIA 2025</p>
+        <p class="eyebrow">Eigen Atlas Bioinformatics</p>
         <h1>Aprender IA aplicada a datos biologicos, paso por paso.</h1>
         <p class="lead">
           Este documento traduce los notebooks del repositorio a una ruta clara:
@@ -1637,8 +1637,8 @@
           modelo tiene sentido usar.
         </p>
         <p class="source-chip">
-          Companion didactico basado en
-          <a href="https://github.com/GalanVE/MeIA_2025_Bioinformatica" target="_blank" rel="noreferrer">GalanVE/MeIA_2025_Bioinformatica</a>
+          Fuente original citada:
+          <a href="https://github.com/GalanVE/MeIA_2025_Bioinformatica" target="_blank" rel="noreferrer">repositorio base</a>
         </p>
         <div class="signal-row" aria-label="Resumen del repositorio">
           <div class="signal">
@@ -4376,7 +4376,7 @@ Claim que NO puedo usar:</pre>
                 <td>SBML, COBRA, FBA, medio, gap filling, reacciones.</td>
               </tr>
               <tr>
-                <td><span class="mono">MeIA_2025.pdf</span> y <span class="mono">Aula_1_Introducción_Datos_Biológicos.pdf</span></td>
+                <td>PDF introductorio y aula base del taller original</td>
                 <td>Que contexto teorico acompaña el taller?</td>
                 <td>Introduccion, motivacion, datos biologicos y estructura del curso.</td>
               </tr>
@@ -4554,13 +4554,13 @@ Claim que NO puedo usar:</pre>
                 <p>Corre primero base liviana. Crea ambientes separados para RDKit/ChEMBERTa y DNNGIOR.</p>
               </section>
             </div>
-            <pre class="mini-code"># Ambiente TFBS descrito en MeIA_2025.pdf
+            <pre class="mini-code"># Ambiente TFBS descrito en el PDF original
 conda create --name tfbs_unam python=3.8
 conda activate tfbs_unam
 conda install pandas=1.2.4 scikit-learn=0.24.1 matplotlib=3.3.4 \
   shap=0.44.1 numpy=1.20.1 -c conda-forge
 
-# Ambiente DNNGIOR descrito en MeIA_2025.pdf
+# Ambiente DNNGIOR descrito en el PDF original
 conda create --name dnngior python=3.10.16
 conda activate dnngior
 pip install dnngior
@@ -5123,8 +5123,8 @@ Siguiente prueba:</pre>
   </main>
 
   <footer>
-    Companion didactico para estudiar
-    <a href="https://github.com/GalanVE/MeIA_2025_Bioinformatica" target="_blank" rel="noreferrer">GalanVE/MeIA_2025_Bioinformatica</a>.
+    Eigen Atlas Bioinformatics. Fuente original citada:
+    <a href="https://github.com/GalanVE/MeIA_2025_Bioinformatica" target="_blank" rel="noreferrer">repositorio base</a>.
   </footer>
   <script>
     (() => {

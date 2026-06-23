@@ -1,13 +1,12 @@
-# Guia didactica IA + datos biologicos
+# Eigen Atlas Bioinformatics
 
-Companion educativo para estudiar el taller
-[GalanVE/MeIA_2025_Bioinformatica](https://github.com/GalanVE/MeIA_2025_Bioinformatica)
-con una estructura mas pedagogica, cronologica e interactiva.
+Version didactica propia para estudiar IA aplicada a datos biologicos con una
+estructura pedagogica, cronologica e interactiva.
 
 El sitio principal esta en [`index.html`](index.html). Se puede abrir directo en
 el navegador o publicar con GitHub Pages.
 
-## Que aporta este companion
+## Que aporta esta version
 
 - Una guia HTML autocontenida con explicaciones, codigo, animaciones y simuladores.
 - Un mapa cronologico: fundamentos, representaciones, modelos, omica, proteinas,
@@ -17,12 +16,12 @@ el navegador o publicar con GitHub Pages.
   habilidad real.
 - Documentacion ligera para usar el repo fuente sin perderse.
 
-## Fuente original
+## Fuente original citada
 
-Este repo no reemplaza ni redistribuye todo el material fuente. Cita, organiza y
-explica el taller original:
+Este repo no reemplaza ni redistribuye todo el material fuente. Lo cita,
+organiza y explica desde una version propia:
 
-> GalanVE. MeIA_2025_Bioinformatica. GitHub.
+> GalanVE. Repositorio original de bioinformatica aplicada. GitHub.
 > https://github.com/GalanVE/MeIA_2025_Bioinformatica
 
 Usa el repo original para notebooks, datos, PDF y practicas completas.
@@ -37,7 +36,7 @@ Usa el repo original para notebooks, datos, PDF y practicas completas.
 │   ├── ruta-aprendizaje.md    # Ruta sugerida de estudio
 │   ├── criterios-cientificos.md
 │   └── referencias.md
-├── CITATION.cff               # Como citar este companion
+├── CITATION.cff               # Como citar esta version
 └── NOTICE.md                  # Atribucion y alcance
 ```
 
@@ -55,6 +54,5 @@ En GitHub: `Settings > Pages > Deploy from a branch > main / root`.
 La pagina quedara disponible como:
 
 ```text
-https://TU_USUARIO.github.io/meia-bioinformatica-ia-companion/
+https://TU_USUARIO.github.io/eigen-atlas-bioinformatics/
 ```
-

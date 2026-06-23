@@ -1,16 +1,15 @@
 cff-version: 1.2.0
-message: "Si usas esta guia, cita este companion y el repositorio fuente."
-title: "Guia didactica IA + datos biologicos"
+message: "Si usas esta guia, cita esta version y el repositorio fuente."
+title: "Eigen Atlas Bioinformatics"
 version: "2026.06"
 date-released: "2026-06-23"
-repository-code: "https://github.com/Theovia/meia-bioinformatica-ia-companion"
-url: "https://github.com/Theovia/meia-bioinformatica-ia-companion"
+repository-code: "https://github.com/Theovia/eigen-atlas-bioinformatics"
+url: "https://github.com/Theovia/eigen-atlas-bioinformatics"
 authors:
-  - name: "Companion didactico basado en GalanVE/MeIA_2025_Bioinformatica"
+  - name: "Eigen Atlas Bioinformatics"
 references:
   - type: software
-    title: "MeIA_2025_Bioinformatica"
+    title: "Repositorio original de bioinformatica aplicada"
     repository-code: "https://github.com/GalanVE/MeIA_2025_Bioinformatica"
     authors:
       - name: "GalanVE"
-
